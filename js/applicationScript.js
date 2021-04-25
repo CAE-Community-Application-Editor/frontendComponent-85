@@ -64,7 +64,7 @@ var loadSongs = function(){
 
 //end variable declaration
 
-  client.sendRequest("GET", songs, "", "", {}, false,
+  client.sendRequest("GET", "songs", "", "", {}, false,
   function(data, type) {
     document.getElementById("p").innerText = data.map(song => song.title);
   },
